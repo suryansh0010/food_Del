@@ -1,17 +1,25 @@
-import { createContext } from "react";
+import { createContext, useState, useEffect } from "react";
+import { food_list } from "../assets/assets"; // Check this import to make sure it's correct
 
-// Create the context
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    // Define any state or functions to share via the context
+    // If you're fetching the food_list from an API, make sure it's fetched correctly
+    const [foodData, setFoodData] = useState([]);
+
+    // Simulating data fetch from the assets for example purposes
+    useEffect(() => {
+        // Ensure food_list has valid data or fetch it from an API
+        setFoodData(food_list); 
+    }, []);
+
     const contextValue = {
-        // Add properties or functions to pass to children here
+        food_list: foodData // Ensure that this value contains food items
     };
 
     return (
         <StoreContext.Provider value={contextValue}>
-            {props.children} {/* Render child components */}
+            {props.children}
         </StoreContext.Provider>
     );
 };
