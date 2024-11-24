@@ -2,11 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 const Navbar = () => {
-
     const[menu,setmenu] = useState("home");
-
-
-
   return (
     <div className='navbar'>
       <img src={assets.logo} alt='' className='logo'/>
@@ -27,5 +23,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar

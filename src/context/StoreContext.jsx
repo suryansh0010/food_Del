@@ -1,20 +1,43 @@
 import { createContext, useState, useEffect } from "react";
-import { food_list } from "../assets/assets"; // Check this import to make sure it's correct
+import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    // If you're fetching the food_list from an API, make sure it's fetched correctly
-    const [foodData, setFoodData] = useState([]);
+    const [cartItems, setCartItem] = useState({});
+    
+    const addToCart = (itemId) => {
+        if (!cartItems[itemId]) {
+            setCartItem((prev) => ({ ...prev, [itemId]: 1 }));
+        } else {
+            setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+        }
+    };
 
-    // Simulating data fetch from the assets for example purposes
+    const removeFromCart = (itemId) => {
+        if (cartItems[itemId] > 1) {
+            
+            setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+        } else {
+            // Remove the item completely if the count reaches 1
+            const updatedCart = { ...cartItems };
+            delete updatedCart[itemId];
+            setCartItem(updatedCart);
+        }
+    };
+
+    const [foodData, setFoodData] = useState([]);
+    
     useEffect(() => {
-        // Ensure food_list has valid data or fetch it from an API
         setFoodData(food_list); 
     }, []);
 
     const contextValue = {
-        food_list: foodData // Ensure that this value contains food items
+        food_list: foodData,    
+        cartItems,
+        setCartItem,
+        addToCart,
+        removeFromCart
     };
 
     return (
