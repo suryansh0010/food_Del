@@ -19,7 +19,7 @@ const StoreContextProvider = (props) => {
             
             setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
         } else {
-            // Remove the item completely if the count reaches 1
+           
             const updatedCart = { ...cartItems };
             delete updatedCart[itemId];
             setCartItem(updatedCart);
