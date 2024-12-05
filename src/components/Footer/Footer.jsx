@@ -16,13 +16,24 @@ const Footer = () => {
               </div>
           </div>
           <div className='footer-content-center'>
-                
+                <h2>COMPANY</h2>
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Delivery</li>
+                  <li>privacy policy</li>
+                </ul>
           </div>
           <div className='footer-content-right'>
-
+                <h2>Get In Touch</h2>
+                <ul>
+                  <li>7002003001</li>
+                  <li>suryansh@gmail.com</li>
+                </ul>
           </div>
-          
       </div>
+      <hr/>
+      <p className='footer-copyright'>cpyright tag policy.....</p>
     </div>
   )
 } 
