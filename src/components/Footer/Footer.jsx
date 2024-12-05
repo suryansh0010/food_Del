@@ -5,7 +5,15 @@ const Footer = () => {
   return (
     <div className='footer' id='footer'>
       <div className='footer-content'>
+          <div className='footer-content-left'>
 
+          </div>
+          <div className='footer-content-right'>
+
+          </div>
+          <div className='footer-content-center'>
+
+          </div>
       </div>
     </div>
   )
