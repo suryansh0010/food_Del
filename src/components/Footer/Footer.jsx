@@ -31,7 +31,7 @@ const Footer = () => {
                   <li>suryansh@gmail.com</li>
                 </ul>
           </div> 
-      </div>
+      </div> 
       <hr/>
       <p className='footer-copyright'>cpyright tag policy.....</p>
     </div>
