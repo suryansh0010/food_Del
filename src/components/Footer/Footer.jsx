@@ -30,7 +30,7 @@ const Footer = () => {
                   <li>7002003001</li>
                   <li>suryansh@gmail.com</li>
                 </ul>
-          </div>
+          </div> 
       </div>
       <hr/>
       <p className='footer-copyright'>cpyright tag policy.....</p>
@@ -39,3 +39,4 @@ const Footer = () => {
 } 
 
 export default Footer
+ 
