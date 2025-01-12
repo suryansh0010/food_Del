@@ -19,6 +19,6 @@ const ExploreMenu = ({category ,setCategory}) => {
       </div> 
       <hr />
     </div>
-  )
+  ) 
 } 
 export default ExploreMenu
