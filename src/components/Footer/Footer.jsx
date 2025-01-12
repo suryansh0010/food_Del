@@ -35,7 +35,7 @@ const Footer = () => {
       <hr/>
       <p className='footer-copyright'>cpyright tag policy.....</p>
     </div>
-  )
+  ) 
 } 
 
 export default Footer
