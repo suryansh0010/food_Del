@@ -12,7 +12,7 @@ const StoreContextProvider = (props) => {
         } else {
             setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
         }
-    };
+    }; 
 
     const removeFromCart = (itemId) => {
         if (cartItems[itemId] > 1) {
