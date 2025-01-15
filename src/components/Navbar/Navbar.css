@@ -16,7 +16,7 @@
 }
 .navbar-right{
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 40px;
 }
 .navbar button{
