@@ -17,7 +17,7 @@ const App = () => {
           <Route path='/order' element={<PlaceOrder />} />
         </Routes>
       </div>
-      <Footer />
+      <Footer /> 
     </>
   );
 }
