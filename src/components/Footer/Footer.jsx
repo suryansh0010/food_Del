@@ -34,7 +34,7 @@ const Footer = () => {
       </div> 
       <hr/>
       <p className='footer-copyright'>cpyright tag policy.....</p>
-    </div>
+    </div> 
   ) 
 } 
 
