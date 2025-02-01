@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='navbar'>
       <img src={assets.logo} alt='' className='logo'/>
       <ul className='navbar-menu'>
-        <NavLink onClick={()=>setmenu("home")} className={menu==="home"?"active":""}>home</NavLink>
+        <NavLink to='/' onClick={()=>setmenu("home")} className={menu==="home"?"active":""}>home</NavLink>
         <a href='#explore-menu' onClick={()=>setmenu("menu")} className={menu==="menu"?"active":""}>menu</a>
         <a href='app-download' onClick={()=>setmenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
         <a href='footer' onClick={()=>setmenu("contact-us")} className={menu==="contact-us"?"active":""}>contact-us</a>
