@@ -9,5 +9,5 @@
     display: flex;
     justify-content: center;
     gap: max(2vw,10px,a);
-    margin-top: ;
+    margin-top: 40px;
 }
