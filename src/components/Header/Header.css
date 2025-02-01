@@ -50,3 +50,8 @@ button {
         max-width: 45%;
     }
 }
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 55%;
+    }
+}
