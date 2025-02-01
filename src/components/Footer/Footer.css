@@ -80,11 +80,12 @@
   
   @media (max-width: 750px) {
     .footer-content {
+      display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 35px;
     }
   
-    .footer-content-left,
+    /* .footer-content-left,
     .footer-content-center,
     .footer-content-right {
       align-items: center;
@@ -98,6 +99,9 @@
   
     .footer-social-icons {
       justify-content: center;
-    }
+    } */
+     .footer-copyright{
+      text-align: center;
+     }
   }
   
