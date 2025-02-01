@@ -54,4 +54,10 @@ button {
     .header-contents{
         max-width: 55%;
     }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }
