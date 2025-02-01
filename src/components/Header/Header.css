@@ -10,35 +10,43 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Ensure the image is behind the content */
+    z-index: -1; 
 }
 
 .header-contents {
     position: absolute;
-    bottom: 20px; /* Adjust position */
+    bottom: 20px; 
     left: 20px;
-    color: white; /* Ensure text visibility */
+    color: white;
     animation:  fadeIn 3s;
 }
 
 .header-title {
-    font-size: 5vw; /* Larger font size for prominence */
-    margin-bottom: 20px; /* Add some space between the title and other text */
+    font-size: 5vw;
+    margin-bottom: 20px;
     margin-right: 400px;
 }
 
 .header-subtext {
-    font-size: 1.3vw; /* Smaller font size for subtext */
+    font-size: 1.3vw;
     margin-bottom: 20px;
 }
 button {
     font-size: 1vw;
     padding: 10px 15px;
-    background-color: #fdfdfd; /* Example color, change as per your theme */
+    background-color: #fdfdfd; 
     color: black;
     border: none;
     margin-left: 5px;
-    border-radius: 20px; /* Add curvature to the corners */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: background-color 0.5s; /* Smooth transition effect */
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
 }
