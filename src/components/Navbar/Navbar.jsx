@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     const[menu,setmenu] = useState("home");
   return (
     <div className='navbar'>
@@ -10,7 +10,7 @@ const Navbar = () => {
       <ul className='navbar-menu'>
         <Link to='/' onClick={()=>setmenu("home")} className={menu==="home"?"active":""}>home</Link>
         <a href='#explore-menu' onClick={()=>setmenu("menu")} className={menu==="menu"?"active":""}>menu</a>
-        <a href='#app-download' onClick={()=>setm enu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
+        <a href='#app-download' onClick={()=>setmenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
         <a href='#footer' onClick={()=>setmenu("contact-us")} className={menu==="contact-us"?"active":""}>contact-us</a>
       </ul> 
       <div className='navbar-right'> 
