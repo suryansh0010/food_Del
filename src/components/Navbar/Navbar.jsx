@@ -19,7 +19,7 @@ const Navbar = () => {
             <img src={assets.basket_icon} alt=''/>
             <div className='dot'></div>
         </div>
-        <button>Sign in</button> 
+        <button>Sign in</button>
       </div>
     </div>
   )
