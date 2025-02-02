@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets'
 import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const[menu,setmenu] = useState("home");
-  return (
+  return(
     <div className='navbar'>
       <img src={assets.logo} alt='' className='logo'/>
       <ul className='navbar-menu'>
