@@ -32,7 +32,7 @@ const LoginPopup = ({ setShowLogin }) => {
           <p>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
 
-        {/* Toggle between sign up and login */}
+        
         {currState === "Login" ? (
           <p>
             Don't have an account? <span onClick={toggleState}>Create one</span>
