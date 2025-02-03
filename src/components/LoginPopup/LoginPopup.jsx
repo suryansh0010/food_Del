@@ -3,7 +3,9 @@ import './LoginPopup.css'
 const LoginPopup = () => {
   return (
     <div>
-      <from></from>
+      <from>
+        
+      </from>
     </div>
   )
 }
