@@ -58,3 +58,9 @@
 .cart-promocode p{
     color: #555;
 }
+.cart-promocode input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
