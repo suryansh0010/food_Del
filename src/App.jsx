@@ -7,7 +7,7 @@ import Cart from './pages/Cart/Cart';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import LoginPopup from './components/LoginPopup/loginPopup';
   
-const App = () => {
+const App = () => { 
 
   const [showLogin,setShowLogin] = useState(false)
   return ( 
